@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-green-deep: #12362a;
+  --color-beige: #f6efe2;
+  --color-green-light: #cbd8c3;
+  --color-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-green-deep);
+}
+
+/* ===== TYPO DESKTOP PAR DEFAUT ===== */
+
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ===== OVERRIDES MOBILE - FIN DU FICHIER ===== */
+/* Mobile Tailwind strict < 640px */
+
+@media (max-width: 639px) {
+
+  h1 {
+    font-size: 1.75rem;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.15;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    line-height: 1.25;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
+
+@keyframes ken-burns {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.08) translate(-2%, -1%);
+  }
+}
